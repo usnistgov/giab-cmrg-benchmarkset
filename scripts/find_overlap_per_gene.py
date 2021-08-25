@@ -17,7 +17,7 @@ bases_covered_per_gene = []
 
 for gene in f_input_genes_lines:
     gene = gene.strip("\n")
-    print(gene)
+    # print(gene)
     tmf = open("temp_gene_file.bed", "w")
     tmf.write(gene)
     tmf.flush()
@@ -29,7 +29,7 @@ for gene in f_input_genes_lines:
         bases_covered_per_gene.append('0')
     subprocess.check_output("rm temp_gene_file.bed", shell = True)
 
-print(bases_covered_per_gene)
+# print(bases_covered_per_gene)
 for i in range(0, len(f_input_genes_lines)):
     line = f_input_genes_lines[i]
     if "#" in line:
