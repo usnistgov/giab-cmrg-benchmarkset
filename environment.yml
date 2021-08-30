@@ -1,10 +1,14 @@
 channels:
  - bioconda
+ - conda-forge 
 dependencies:
- - python=2.7.15
- - jupyter-notebook
+ - python
+ - jupyter
+ - notebook
+ - ipykernel
+ - bash_kernel
  - bedtools=2.27.1
- - htslib=1.7
+ - htslib=1.12
  - vt=0.57721
- - bcftools=1.8
+ - bcftools=1.12
  - bedops=2.4.39
