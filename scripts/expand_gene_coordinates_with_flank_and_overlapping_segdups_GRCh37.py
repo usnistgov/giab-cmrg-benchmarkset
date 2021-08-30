@@ -15,7 +15,7 @@ bases_covered_per_gene = []
 
 for gene in f_input_genes_lines:
     gene_name = gene.split("\t")[3].strip("\n")
-    print(gene)
+    # print(gene)
     tmf = open("temp_gene_file_" + gene_name + ".bed", "w")
     tmf.write(gene)
     tmf.flush()

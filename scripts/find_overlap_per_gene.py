@@ -22,12 +22,13 @@ for gene in f_input_genes_lines:
     tmf.write(gene)
     tmf.flush()
     tmf.close()
-    covered_bases = subprocess.check_output("bedtools intersect -a temp_gene_file.bed -b " + benchmark_filename + " | sort -k1,1 -k2,2n - | bedtools merge -i stdin | awk '{sum+=$3-$2} END {print sum}'", shell = True).strip()
+    covered_bases = subprocess.run("bedtools intersect -a temp_gene_file.bed -b " + benchmark_filename + " | sort -k1,1 -k2,2n - | bedtools merge -i stdin | awk '{sum+=$3-$2} END {print sum}'", 
+                                    shell = True, capture_output=True, text=True).stdout.strip()
     if covered_bases != '':
         bases_covered_per_gene.append(covered_bases)
     else:
         bases_covered_per_gene.append('0')
-    subprocess.check_output("rm temp_gene_file.bed", shell = True)
+    subprocess.run("rm temp_gene_file.bed", shell = True)
 
 # print(bases_covered_per_gene)
 for i in range(0, len(f_input_genes_lines)):
@@ -41,6 +42,8 @@ for i in range(0, len(f_input_genes_lines)):
     end = int(line_split[2])
     gene_length = end - start
     coverage = bases_covered_per_gene[i]
+    # print(coverage)
+    # print(gene_length)
     coverage_percentage = float(coverage)/float(gene_length)
     to_write_out = line_split[0] + "\t" + line_split[1] + "\t" + line_split[2] + "\t" + line_split[3].strip() + "\t" + str(coverage) + "\t" + str(coverage_percentage) + "\n"
     f_out.write(to_write_out)
