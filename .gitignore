@@ -5,3 +5,5 @@
 *.DS_Store
 scratch/*
 .snakemake
+.ipynb_checkpoints
+workflow/*
