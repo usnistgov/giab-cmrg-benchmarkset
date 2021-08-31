@@ -18,7 +18,4 @@ Benchmark set generation dependencies that were manually created.
 * `combined curation responses from benchmarking with sm variant v0.02.03 - GRCh37andGRCh38.tsv`: TODO
 
 
-## Other files
-* `HG002v11-align2-{GRCh,GRCh38}.dip_check_for_breaks.bed`: 
-
 
