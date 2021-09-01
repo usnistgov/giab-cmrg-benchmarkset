@@ -5,7 +5,7 @@ Benchmark set generation dependencies that were manually created.
 
 ### Genomic Regions
 * `{GRCh,GRCh38}_MRG_GAPs.bed`: Gaps in reference for medically relevant genes
-* `{GRCh,GRCh38}_mrg_full_gene.bed`: Gene coordinates for full medically relevant gene list.
+* `{GRCh,GRCh38}_mrg_full_gene.bed`: Gene coordinates for full medically relevant gene list. Gene coordinates were obtained from ENSEMBL using ``scripts/GRCh37_lookup_MRG_symbol_coordinates_ENSEMBL.R`. Duplicate gene entries were corrected based on `https://gitlab.nist.gov/gitlab/nolson/mrg-bench-manuscript/-/blob/master/data/gene_coords/ensembl_coords/selected_coordinates_for_duplicated_gene_symbol_entries.tsv`. 
 * `GRCh38_CD4_gaps_slop50.bed`: TODO
 
 ### Manually Curated Errors
