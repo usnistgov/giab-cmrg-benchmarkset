@@ -1,0 +1,67 @@
+.
+├── CHM13v1.0
+│   ├── SmallVariant
+│   │   ├── HG002_CHM13v1.0_CMRG_smallvar_v1.00_draft.bed
+│   │   ├── HG002_CHM13v1.0_CMRG_smallvar_v1.00_draft.vcf.gz
+│   │   └── HG002_CHM13v1.0_CMRG_smallvar_v1.00_draft.vcf.gz.tbi
+│   └── SupplementaryFiles
+│       ├── HG002_CHRM13_CMRG_smallvar_v1.00_GRCh38-equiv-regions_draft.bed
+│       └── HG002v11-align2-CHM13v1.0
+│           ├── HG002v11-align2-CHM13v1.0.dip.bed
+│           ├── HG002v11-align2-CHM13v1.0.dip.vcf.gz
+│           ├── HG002v11-align2-CHM13v1.0.dip.vcf.gz.tbi
+│           ├── HG002v11-align2-CHM13v1.0.hap1.bam
+│           ├── HG002v11-align2-CHM13v1.0.hap1.bam.bai
+│           ├── HG002v11-align2-CHM13v1.0.hap2.bam
+│           └── HG002v11-align2-CHM13v1.0.hap2.bam.bai
+├── GRCh37
+│   ├── SmallVariant
+│   │   ├── HG002_GRCh37_CMRG_smallvar_v1.00.bed
+│   │   ├── HG002_GRCh37_CMRG_smallvar_v1.00.vcf.gz
+│   │   └── HG002_GRCh37_CMRG_smallvar_v1.00.vcf.gz.tbi
+│   ├── StructuralVariant
+│   │   ├── HG002_GRCh37_CMRG_SV_v1.00.bed
+│   │   ├── HG002_GRCh37_CMRG_SV_v1.00.vcf.gz
+│   │   └── HG002_GRCh37_CMRG_SV_v1.00.vcf.gz.tbi
+│   └── SupplementaryFiles
+│       ├── GRCh37_CMRG_benchmark_gene_coordinates.bed
+│       └── HG002v11-align2-GRCh37
+│           ├── HG002v11-align2-GRCh37.dip.bed
+│           ├── HG002v11-align2-GRCh37.dip.vcf.gz
+│           ├── HG002v11-align2-GRCh37.dip.vcf.gz.tbi
+│           ├── HG002v11-align2-GRCh37.hap1.bam
+│           ├── HG002v11-align2-GRCh37.hap1.bam.bai
+│           ├── HG002v11-align2-GRCh37.hap2.bam
+│           ├── HG002v11-align2-GRCh37.hap2.bam.bai
+│           └── HG002v11-align2-GRCh37_report.html
+├── GRCh38
+│   ├── SmallVariant
+│   │   ├── HG002_GRCh38_CMRG_smallvar_v1.00.bed
+│   │   ├── HG002_GRCh38_CMRG_smallvar_v1.00.vcf.gz
+│   │   ├── HG002_GRCh38_CMRG_smallvar_v1.00.vcf.gz.tbi
+│   │   ├── HG002v11-align2-CHM13v1.0.dip.vcf.gz
+│   │   └── HG002v11-align2-CHM13v1.0.dip.vcf.gz.tbi
+│   ├── StructuralVariant
+│   │   ├── HG002_GRCh38_CMRG_SV_v1.00.bed
+│   │   ├── HG002_GRCh38_CMRG_SV_v1.00.vcf.gz
+│   │   └── HG002_GRCh38_CMRG_SV_v1.00.vcf.gz.tbi
+│   └── SupplementaryFiles
+│       ├── GRCh38_CMRG_benchmark_gene_coordinates.bed
+│       └── HG002v11-align2-GRCh38
+│           ├── HG002v11-align2-GRCh38.dip.bed
+│           ├── HG002v11-align2-GRCh38.dip.vcf.gz
+│           ├── HG002v11-align2-GRCh38.dip.vcf.gz.tbi
+│           ├── HG002v11-align2-GRCh38.hap1.bam
+│           ├── HG002v11-align2-GRCh38.hap1.bam.bai
+│           ├── HG002v11-align2-GRCh38.hap2.bam
+│           ├── HG002v11-align2-GRCh38.hap2.bam.bai
+│           └── HG002v11-align2-GRCh38_report.html
+├── README_GIAB_medical_gene_benchmark.md
+├── chksum.md5
+└── hifiasm-assembly
+    ├── HG002-v0.11.mat.fa.gz
+    ├── HG002-v0.11.mat.gff.gz
+    ├── HG002-v0.11.pat.fa.gz
+    └── HG002-v0.11.pat.gff.gz
+
+15 directories, 51 files

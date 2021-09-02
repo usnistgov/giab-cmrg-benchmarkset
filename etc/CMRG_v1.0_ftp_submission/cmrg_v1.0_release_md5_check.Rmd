@@ -1,0 +1,36 @@
+---
+title: "CMRG Release V1.0 MD5 check"
+author: "Nathan D Olson"
+date: "6/7/2021"
+output: html_document
+---
+
+```{r}
+library(here)
+library(tidyverse)
+```
+
+```{r}
+initial_md5_df <- read_tsv(here("resources","CMRG_v1.00/initial.md5"), col_names = "initial") %>% 
+    separate(initial, into = c("filename","md5"), 
+             sep = "=",remove = TRUE) %>% 
+    mutate(md5 = str_trim(md5, side = "both"))
+
+final_md5_df <- read_tsv(here("resources","CMRG_v1.00/chksum.md5"), 
+                         col_names = "initial") %>% 
+    separate(initial, into = c("filename","md5"), 
+             sep = "=",remove = TRUE) %>% 
+    mutate(md5 = str_trim(md5, side = "both"))
+
+bind_rows(initial = initial_md5_df, final = final_md5_df, .id = "md5_check") %>% 
+    arrange(md5) %>% 
+    group_by(md5) %>% 
+    mutate(md5_count = n()) %>% 
+    filter(md5_count > 1) %>% 
+    group_by(md5, filename) %>% 
+    mutate(md5_file_count = n()) %>% 
+    filter(md5_file_count != md5_count) %>% 
+    View()
+```
+
+
