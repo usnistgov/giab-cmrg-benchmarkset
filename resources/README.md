@@ -16,7 +16,10 @@ __File list__
 
 Homopolymers and imperfect homopolymers > 20 bp stratifications are part genome stratifications v2.01. Stratifications included in repo until the v2.01 stratifications are released.
 
-## human.b37.genome
+## genome files
+`*.genome` files used by bedtools. Files provide chromosome name order for sorting and chromosome size.
+
+__human.b37.genome__
 ```
 wget -O human.b37.genome_temp https://raw.githubusercontent.com/arq5x/bedtools2/master/genomes/human.hg19.genome
 
@@ -30,7 +33,7 @@ rm human.b37.genome_temp
 ```
 
 
-## human.b38.genome
+__human.b38.genome__
 ```
 wget -O human.b38.genome_temp https://raw.githubusercontent.com/arq5x/bedtools2/master/genomes/human.hg38.genome
 
