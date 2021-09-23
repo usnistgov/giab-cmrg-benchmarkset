@@ -8,3 +8,11 @@ Create the conda env (can also use mamba, a faster implementation of the conda p
 ```
 conda env create --name cmrg_benchset --file environment.yml
 ```
+
+Pipelines are run in ipython notebooks using the bash kernel
+```
+conda activate cmrg_benchset
+
+## Use ipython notebook for bash kernel
+ipython notebook
+```
